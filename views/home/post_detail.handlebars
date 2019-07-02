@@ -1,0 +1,21 @@
+<div style="border: 1px solid black;" class="py-3 mb-3 pl-3">
+<center><h1>{{results.title}}</h1></center>
+
+<div class="col-md-12">
+    <div class="card">
+        <center><img class="card-img-top" src="/img/a.jpg" height="400px" width="500px">
+</center>
+ <small class="text-muted">{{results.post_date}},{{results.author}}</small>
+    <p style="font-size:20px;">
+        {{results.description}}
+
+    </p>
+         <center>
+          
+          <a class="btn btn-outline-success" href="/editPost/{{results.id}}">Edit</a>
+          <a class="btn btn-outline-danger" href="/deletePost/{{results.id}}">Delete</a>
+          </center>
+    </div>
+
+
+</div>

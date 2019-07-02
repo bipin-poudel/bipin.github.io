@@ -1,0 +1,19 @@
+<div class="container mt-5" style="border:3px solid black;">
+    <center><h2>Update New Post </h2></center>
+    <form method="POST" action="/editpost/{{results.id}}"><!--app page ma link garera post bhanney method bata createpost ma-->
+        <label>Title:</label>
+        <input class="form-control" type="text" name="title" value="{{results.title}}">
+
+         <label>Description:</label>
+        <input class="form-control" type="text" name="description" value="{{results.description}}">
+
+         <label>Image:</label>
+        <input class="form-control" type="text" name="image" value="{{results.image}}">
+
+         <label>Author:</label>
+        <input class="form-control" type="text" name="author" value="{{results.author}}">
+         <hr>
+        <center><button type="Submit" class="btn btn-primary mt-1">Update</a></button></center>
+    </form>
+
+</div>

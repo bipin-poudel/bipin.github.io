@@ -1,0 +1,19 @@
+<div class="container mt-5" style="border:3px solid black;">
+    <center><h2>Create New Post </h2></center>
+    <form method="POST" action="/createpost" enctype="multipart/form-data"><!--app page ma link garera post bhanney method bata createpost ma-->
+        <label>Title:</label>
+        <input class="form-control" type="text" name="title" required><!--required bhaneko data na bhoreikina form save hunnaa-->
+
+         <label>Description:</label>
+        <input class="form-control" type="text" name="description" required>
+
+         <label>Image:</label>
+        <input class="form-control" type="file" name="image" required>
+
+         <label>Author:</label>
+        <input class="form-control" type="text" name="author" required>
+         <hr>
+        <center><button type="Submit" class="btn btn-primary mt-1">Save</button></center>
+    </form>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="container mt-3">
+    <center><h1>Our Posts</h1></center>
+    {{#if success_message}}
+    <div class="alert alert-success text-center">
+        {{success_message}}
+    </div>
+    {{/if}}
+    {{#each post}}
+    <div class="py-3 mb-3 pl-3" style="border: 1px solid black">
+     <div class="media">
+     <img src="/uploads/{{image}}" height="200" width="250" class="mr-3">   
+     <div class="media-body">
+    <center><h3>{{title}}</h3></center>
+
+    <samll class="text-muted">{{post_date}},{{author}}</samll>
+    <p style="font-size:20px;">
+        {{description}}
+
+    </p>
+         <center>
+          <button class="btn btn-outline-info"> <a href="/post_detail/{{id}}">Read More</a></button>
+          
+          </center>
+    </div>
+    </div>
+    </div>
+    {{/each}}
+
